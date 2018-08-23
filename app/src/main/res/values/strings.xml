@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FoodProject</string>
+    <string-array name="title">
+        <item>Half Life</item>
+        <item>Pac Man</item>
+    </string-array>
+    <string-array name="description">
+        <item>First person shooter</item>
+        <item>Cool game, pac man eats things</item>
+    </string-array>
+    <string-array name="foodTitle">
+        <item>Fries</item>
+        <item>Salad</item>
+    </string-array>
+    <integer-array name="foodRank">
+        <item>2</item>
+        <item>4</item>
+    </integer-array>
+</resources>
