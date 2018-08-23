@@ -16,4 +16,12 @@
         <item>2</item>
         <item>4</item>
     </integer-array>
+    <string-array name="songTitle">
+        <item>Sound of Silence</item>
+        <item>Jingle Bells</item>
+    </string-array>
+    <integer-array name="songRating">
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
 </resources>
