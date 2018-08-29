@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--section title text-->
+    <dimen name="section_head_font_size">20.5sp</dimen>
+    <dimen name="section_head_font_weight">700</dimen>
+    <dimen name="section_head_line_spacing">26.5</dimen>
+
+    <!--Find food row users name-->
+    <dimen name="post_username_font_size">16sp</dimen>
+    <dimen name="post_username_font_weight">400</dimen>
+    <dimen name="post_username_line_spacing">20.5</dimen>
+
+    <!--Find food row users pic-->
+    <dimen name="post_user_pic_width">27.33</dimen>
+    <dimen name="post_user_pic_height">28</dimen>
+
+    <!--Find food row food name-->
+    <dimen name="post_font_size">20sp</dimen>
+    <dimen name="post_font_weight">400</dimen>
+    <dimen name="post_line_spacing">26</dimen>
+
+    <!--&lt;!&ndash;Find food row users name&ndash;&gt;-->
+    <!--<dimen name="_font_size">20.5</dimen>-->
+    <!--<dimen name="_font_weight">700</dimen>-->
+    <!--<dimen name="_line_spacing">26.5</dimen>-->
+    <dimen name="text">30sp</dimen>
+</resources>

@@ -27,17 +27,6 @@ public class FoodActivity extends AppCompatActivity {
     }
 }
 
-class Food {
-    Food(String title, int rank, int image) {
-        this.title = title;
-        this.rank = rank;
-        this.image= image;
-    }
-    String title;
-    int rank;
-    int image;
-}
-
 class FoodAdapter extends BaseAdapter {
 
     ArrayList<Food> foodArrayList;
@@ -83,4 +72,5 @@ class FoodAdapter extends BaseAdapter {
         ratingBar.setNumStars(food.rank);
         return view;
     }
+
 }

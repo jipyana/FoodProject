@@ -24,4 +24,17 @@
         <item>4</item>
         <item>5</item>
     </integer-array>
+
+
+    <string name="test_post_poster_name">Jamila Ipyana</string>
+    <string name="test_post_food_name">Avocado Toast with Egg</string>
+    <string name="test_post_restaurant_name">Wasatch Grind and Pulp</string>
+    <string name="at">at </string>
+    <string name="poster_profile_pic">poster profile pic</string>
+
+    <string name="filler"> </string>
+    <string name="find_food_title">Find Food</string>
+    <string name="share_food_title">Share Food</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="take_photo">Take Photo</string>
 </resources>
