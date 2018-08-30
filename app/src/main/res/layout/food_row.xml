@@ -6,26 +6,41 @@
 
     <ImageView
         android:id="@+id/foodView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="115dp"
+        android:layout_height="116dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         app:srcCompat="@drawable/halflife" />
 
     <RatingBar
         android:id="@+id/foodRating"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/foodView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="105dp"
         android:numStars="5"
         android:stepSize=".1" />
 
     <TextView
         android:id="@+id/foodText"
-        android:layout_width="162dp"
-        android:layout_height="226dp"
+        android:layout_width="269dp"
+        android:layout_height="38dp"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
         android:layout_toEndOf="@+id/foodView"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/ic_bookmark_border_black_24dp" />
 </RelativeLayout>

@@ -130,6 +130,44 @@ public class FragmentActivity extends AppCompatActivity {
         }
     }
 
+    public static class RestaurantFragment extends Fragment {
+        /**
+         * The fragment argument representing the section number for this
+         * fragment.
+         */
+        private static final String ARG_SECTION_NUMBER = "section_number";
+        ListView listView;
+
+        public RestaurantFragment() {
+        }
+
+        /**
+         * Returns a new instance of this fragment for the given section
+         * number.
+         */
+        public static RestaurantFragment newInstance(int sectionNumber) {
+            RestaurantFragment fragment = new RestaurantFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.activity_restaurant, container, false);
+//            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+//            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+
+            listView = rootView.findViewById(R.id.restaurantList);
+            FragmentAdapter fragmentAdapter = new FragmentAdapter(this.getContext());
+            listView.setAdapter(fragmentAdapter);
+
+            return rootView;
+        }
+    }
+
     public static class DishFragment extends Fragment {
         /**
          * The fragment argument representing the section number for this
@@ -188,15 +226,17 @@ public class FragmentActivity extends AppCompatActivity {
             }
             else if (position==1){
                 return ShareFoodFragment.newInstance(position + 1);
-            } else {
+            } else if (position == 2){
                 return DishFragment.newInstance(position + 1);
+            } else {
+                return RestaurantFragment.newInstance(position + 1);
             }
         }
 
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 4;
         }
     }
 
